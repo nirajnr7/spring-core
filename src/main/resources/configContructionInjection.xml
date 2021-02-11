@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="com.contructionInjection.Certificate" name="cer">
+        <constructor-arg value="Android ata h" />
+    </bean>
+
+    <bean class="com.contructionInjection.Student" name="s1">
+        <constructor-arg value="niraj"/>
+        <constructor-arg value="10"/>
+        <constructor-arg ref="cer"/>
+    </bean>
+
+<!--    c shchma v use kr skyta hh-->
+
+
+
+
+</beans>
